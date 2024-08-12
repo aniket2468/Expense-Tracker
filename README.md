@@ -31,3 +31,51 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/Expense-Tracker.git
 cd Expense-Tracker
+```
+
+### 2. Create a Virtual Environment
+
+It's recommended to create a virtual environment to manage your dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+```
+
+### 3. Install Dependencies
+
+Install all the required Python packages using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Up Environment Variables
+
+Create a `.env` file in the root directory of the project and add the following environment variables:
+
+```bash
+MONGO_USERNAME=your_mongo_username
+MONGO_PASSWORD=your_mongo_password
+MONGO_CLUSTER=your_mongo_cluster
+MONGO_DBNAME=your_database_name
+SECRET_KEY=your_secret_key
+```
+
+Replace the placeholder values with your actual MongoDB credentials and a secret key.
+
+### 5. Run the Application
+
+Start the Flask development server:
+
+```bash
+python app.py
+```
+
+The application will be running on `http://127.0.0.1:5000/`. Open this URL in your web browser to access the Expense Tracker.
+
+### 6. Accessing the Application
+1. **Register** a new user account.
+2. **Log in** with your registered credentials.
+3. **Start Managing** your expenses!
+
